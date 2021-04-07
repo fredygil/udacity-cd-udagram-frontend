@@ -6,4 +6,4 @@ RUN npm install
 COPY ./ /app/
 RUN ionic build
 EXPOSE 8100
-CMD ["ionic", "serve", "--external"]
+CMD ["ionic", "serve", "--external", "--disable-host-check"]
